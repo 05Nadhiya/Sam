@@ -3,7 +3,7 @@ name : Test Pipeline
 on: 
   push:
     branch:
-      -main
+      - f13 
 
 
 jobs:
@@ -13,3 +13,8 @@ jobs:
      - name: Build step
        run:  Echo "Building Application"
 
+  sample:
+    runs-on: ubuntu-Latest
+    steps:
+      - name : Test
+        run : echo "Test Run"
