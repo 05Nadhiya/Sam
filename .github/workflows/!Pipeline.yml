@@ -13,4 +13,12 @@ jobs:
      - name: Build 
        run:  echo "Building Application"
 
+
+  sample:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Test
+       run: echo "Test run"
+
+
   
