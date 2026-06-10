@@ -1,0 +1,15 @@
+name : Test Pipeline
+
+on: 
+  push:
+    branch:
+      -main
+
+
+jobs:
+  test:
+    runs-on: Latest-ubuntu
+    steps:
+     - name: Build step
+       run:  Echo "Building Application"
+
